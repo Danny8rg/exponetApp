@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Header from '../Components/Header/Header'
 import './PrincipalShop.css';
+import Footer from '../Components/Footer/Footer';
 
 function PrincipalShop() {
   const [products, setProducts] = useState([]);
@@ -69,7 +70,7 @@ function PrincipalShop() {
   return (
     <>
       <Header />
-      <h1>Exponet.com</h1>
+      <h1 className='title'>Exponet.com</h1>
       <div className="product-container">
         {products.map((product) => (
           <div key={product.productId} className="product-card">
@@ -87,6 +88,7 @@ function PrincipalShop() {
             <p>Tienda: {product.productShopOwner}</p>
           </div>
         ))}
+      <Footer />
       </div>
     </>
   );

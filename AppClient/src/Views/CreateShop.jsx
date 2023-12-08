@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '../Components/Header/Header';
+import Footer from '../Components/Footer/Footer';
 
 function UpdateShop() {
   const [shopName, setShopName] = useState('');
@@ -222,6 +223,7 @@ function UpdateShop() {
         </tbody>
       </table>
     </div>
+    <Footer />
     </>
   );
 }

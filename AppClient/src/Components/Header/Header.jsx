@@ -8,9 +8,7 @@ const Header = () => {
   const userId = Cookies.get('userId');
 
   const handleLogout = () => {
-    // Elimina la cookie y realiza cualquier otra lógica de cierre de sesión necesaria
     Cookies.remove('userId');
-    // Redirige a la página de inicio o a donde prefieras
     navigate('/');
   };
 
@@ -20,12 +18,16 @@ const Header = () => {
         <ul>
           <li>
             <Link to="/">Inicio</Link>
-          </li>
+          </li>   
           <li>
           <Link to="/PrincipalShop">Tiendas</Link>
-          <Link to="/UpdateShop">Actualizar Productos</Link>
-          <Link to="/CreateShop">crear tienda</Link>
           </li>
+          <li>
+          <Link to="/UpdateShop">Productos</Link>
+          </li>
+          <li>
+          <Link to="/CreateShop">Unete</Link>
+          </li>    
           {userId ? (
             <>
               <li>

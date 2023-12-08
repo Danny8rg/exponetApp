@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './Register.css'
 import Header from '../Components/Header/Header';
+import Footer from '../Components/Footer/Footer';
 
 function RegisterForm() {
   const [formData, setFormData] = useState({
@@ -115,6 +116,7 @@ function RegisterForm() {
       </div>
       <button type='submit'>Registrarse</button>
     </form>
+    < Footer />
   </>
   );
 }

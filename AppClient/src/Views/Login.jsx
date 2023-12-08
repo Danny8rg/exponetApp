@@ -4,6 +4,7 @@ import Cookies from 'js-cookie';
 import { useNavigate } from 'react-router-dom';
 import './Login.css'
 import Header from '../Components/Header/Header';
+import Footer from '../Components/Footer/Footer';
 
 function Login() {
   const [formData, setFormData] = useState({
@@ -68,6 +69,7 @@ function Login() {
       </div>
       <button type='submit'>Iniciar Sesión</button>
     </form>
+    < Footer />
   </>
   );
 }

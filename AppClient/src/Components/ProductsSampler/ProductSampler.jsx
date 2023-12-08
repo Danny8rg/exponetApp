@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'
 import axios from 'axios';
 import './ProductSampler.css';
 
@@ -39,7 +40,6 @@ function PrincipalShop() {
 
   return (
     <>
-      <h1>Exponet.com</h1>
       <div className="product-container">
         {products.slice(0, 3).map((product) => (
           <div key={product.productId} className="product-card">
@@ -51,6 +51,7 @@ function PrincipalShop() {
             <p>Total: ${calculateTotalPrice(product.productId)}</p>
             <p>Stock: {stock[product.productId]}</p>
             <p>Tienda: {product.productShopOwner}</p>
+            <Link to="/PrincipalShop" className='buttonbuy'>Comprar El Producto</Link>
           </div>
         ))}
       </div>

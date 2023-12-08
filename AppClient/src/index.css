@@ -1,6 +1,4 @@
-Routes{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: aqua;
+body{
+    background-image: url('../public/Fondo.jpg');
+    
 }

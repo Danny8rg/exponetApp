@@ -13,7 +13,8 @@
 }
 
 .product-card {
-  border: 1px solid #ccc;
+  border: 1px solid;
+  border-color: #205bca;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 15px;
@@ -34,4 +35,12 @@ h1 {
   text-align: center;
   margin-top: 40px;
   color: #333;
+}
+
+.buttonbuy{
+  border-radius: 15px;
+  border: 2px;
+  border-style: solid;
+  border-color: rgb(0, 38, 255);
+  width:  150px;
 }
